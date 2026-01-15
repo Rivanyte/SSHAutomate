@@ -101,11 +101,13 @@ VMWare > NetOps-PH Settings > NetAdapter (2, 3, & 4) > Advance > MAC Address
 
 | NetAdapter   | MAC Address      | VM Interface | ENS     |
 | ---          | ---              | ---          | ---     |
-| NetAdapter 2 | ___.___.___.___  | ens___       |  ens192 |
-| NetAdapter 3 | ___.___.___.___  | ens___       |  ens224 |
-| NetAdapter 4 | ___.___.___.___  | ens___       |  ens256 |
+| NetAdapter 2 | 00:0C:29:41:F9:30  | ens___       |  ens192 |
+| NetAdapter 3 | 00:0C:29:41:F9:3A  | ens___       |  ens224 |
+| NetAdapter 4 | 00:0C:29:41:F9:44  | ens___       |  ens256 |
 
 <br>
+type: ip -br link para ma double check kung sanme sa mga mac add
+<img width="779" height="482" alt="{F90DAEC5-9D18-47CD-B0F8-D4E08A883575}" src="https://github.com/user-attachments/assets/8936f921-adf2-4fa1-886e-516c3e2b0736" />
 
 2. Get Network-VM Mapping
 ~~~
@@ -304,6 +306,8 @@ Create a Virtual Port Group for IOX Container Network
 > Make sure appid is lowercase.
 
 ~~~
+
+*para magkaroon ng mga apps just type guestshell enable*
 !@UTM-PH
 conf t
  iox
